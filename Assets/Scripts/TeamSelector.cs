@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TeamSelector : MonoBehaviour
 {
@@ -26,11 +27,14 @@ public class TeamSelector : MonoBehaviour
         playerPrefab.sprite = player.GetComponent<Image>().sprite;
 
         Instantiate(playerPrefab, turn1 ? team1Viewport : team2Viewport);
-        ToggleTurn();
         TeamManager.AddPlayerToTeam(player.GetComponent<Image>(), turn1);
+        ToggleTurn();
     }
 
-
+    public void StartGame()
+    {
+        SceneManager.LoadScene("GameScreen");
+    }
 
     private void ToggleTurn()
     {

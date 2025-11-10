@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TeamSelector.unity
     guid: 1202bb1266d2ed2458c23451c319513c
+  - enabled: 1
+    path: Assets/Scenes/GameScreen.unity
+    guid: 11131b764c84c584c9579e16d5666f9e
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: e9a81717415fbff46b6d3c834bb81972
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
